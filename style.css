@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+canvas{
+    border: 2px solid steelblue;
+    height: 80vh;
+    transform: translateY(5%);
+}
+
+h4{
+    color: steelblue;
+    font-size: 1rem;
+}
+
+.tool-box{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 80vh;
+    position: absolute;
+    left: -1rem;
+    margin-top: 9.2rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ddd;
+}
+
+.tool-box > * {
+    background-color: steelblue;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.45rem;
+    transform: translateX(20%);
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tool-box >*:hover{
+    scale: 1.05;
+}
+
+
+.tool-box > *:last-child{
+    margin-top: 40%;
+}
+
+#clear{
+    font-size: 16px;
+}
+
+#clear:hover{
+    background-color: rgb(203, 99, 99);
+}
+
+#increase:hover{
+    color: steelblue;
+    background-color: #ddd;
+}
+
+#decrease:hover{
+    color: rgb(203, 99, 99);
+    background-color: #ddd;
+}
+
+.footer{
+    display: flex;
+    color: silver;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin: 4px;
+    color: #6693C1;
+}
+
+.icon{
+    width: 5%;
+}
